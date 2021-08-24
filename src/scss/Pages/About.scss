@@ -1,0 +1,316 @@
+.about-page{
+  display: block !important;
+  padding-bottom: 70px;
+  .about-buttons{
+    display: flex;
+    .about__button{
+      background: #FFFFFF;
+      border-radius: 15px;
+      padding: 10px 40px;
+      font-weight: 800;
+      font-size: 20px;
+      margin-right: 10px;
+      opacity: 0.4;
+      transition: all .5s;
+      cursor: pointer;
+    }
+    .active_about__button{
+      opacity: 1;
+      transition: all .5s;
+    }
+    .about__button:hover{
+      transform: scale(1.02);
+    }
+  }
+  .content{
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 50px;
+    width: 100%;
+    padding: 25px 35px 0;
+    margin-bottom: 0;
+    min-height: 100vh;
+    .about-container{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+    }
+    .awards-container{
+      padding-bottom: 50px;
+      .award__year{
+        color:#fff;
+        font-size: 32px;
+        margin: 20px 0 10px;
+      }
+      .awards{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    .history-container{
+      .history{
+        padding-bottom: 20px;
+      }
+    }
+    .person__card{
+      background: rgba(196, 196, 196, 0.2);
+      border-radius: 35px;
+      padding: 25px 20px 45px;
+      color:#fff;
+      font-size: 14px;
+      font-weight: 300;
+      width: 300px;
+      margin:0 10px 10px 0;
+      .person__img{
+        height: 130px;
+        width: 130px;
+        object-fit: cover;
+        border-radius: 130px;
+        padding-left:10px;
+      }
+      .person-block{
+        .person__type{
+          padding: 35px 0 10px;
+          padding-left:10px;
+          font-weight: 800;
+          display: block;
+        }
+        .person__name{
+          padding-bottom: 20px;
+          padding-left:10px;
+          font-size: 18px;
+          display: block;
+        }
+      }
+      .person__text{
+        margin-top: 15px;
+        display: block;
+        padding: 0 20px 0 10px;
+      }
+    }
+    .award__card{
+      color:#fff;
+      padding: 30px 20px 45px;
+      width: 420px;
+      background: rgba(196, 196, 196, 0.2);
+      border-radius: 35px;
+      margin: 0 10px 10px 0;
+      .award__img{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 25px;
+      }
+      .award__title{
+        font-size: 24px;
+        padding: 30px 0 20px;
+      }
+      .award-block{
+        border-left: 1px solid #fff;
+        padding: 20px 5px 10px 20px;
+        .winners-block,.players-block{
+          .winners__item{
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            .ball{
+              width: 15px;
+              height: 15px;
+              background: #000;
+              margin-right: 10px;
+              border-radius: 10px;
+            }
+            .gold{
+              background: gold;
+            }
+            .silver{
+              background: silver;
+            }
+            .bronze{
+              background: #925B09;
+            }
+          }
+          .winners__title{
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+        .players-block{
+          margin-top: 20px;
+        }
+      }
+    }
+    .history__item{
+      color:#fff;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 10px 0 50px;
+      .history-title{
+        margin-bottom: 20px;
+        max-width: 330px;
+        .history__year{
+          padding: 0 0 10px 30px;
+          font-size: 32px;
+          border-bottom: 2px solid #fff;
+        }
+        .history__title{
+          padding: 20px 0 0 30px;
+          font-weight: 300;
+          font-size: 24px;
+        }
+      }
+      .history__card{
+        max-width: 890px;
+        background: rgba(196, 196, 196, 0.2);
+        border-radius: 35px;
+        padding: 30px 30px 50px;
+        display: flex;
+        .history__img{
+          width: 350px;
+          height: 220px;
+          border-radius: 30px;
+          margin-right: 60px;
+        }
+        .history-block{
+          margin-top: 5px;
+          .history__text{
+            padding: 20px;
+          }
+        }
+      }
+    }
+    .about-head{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      
+    }
+  }
+}
+@media(max-width:1023px){
+  .about-page{
+    .about-buttons{
+      overflow-x: scroll;
+      width: 100vw;
+      padding: 0 20px;
+      margin-left: -5vw;
+      .about__button{
+        font-size: 14px;
+        padding: 10px 25px;
+      }
+    }
+    .content{
+      margin-top: 10px;
+      padding: 15px 10px;
+      .about-container{
+        padding-bottom: 30px;
+      }
+      .awards-container{
+        .award__year{
+          font-size: 24px;
+          margin-left: 20px;
+        }
+      }
+      .person__card{
+        border-radius: 30px;
+        padding: 20px 10px 30px;
+        font-size: 8px;
+        width: 49.5%;
+        margin:0 1% 1% 0;
+        .person__img{
+          width: 75px;
+          padding-left:10px;
+        }
+        .person-block{
+          .person__type{
+            padding: 15px 0 5px;
+            padding-left:10px;
+            display: block;
+          }
+          .person__name{
+            font-size: 10px;
+          }
+        }
+        .person__text{
+          margin-top: 10px;
+          padding: 0 5px 0 10px;
+        }
+      }
+      .person__card:nth-child(2n){
+        margin-right: 0;
+      }
+      .history__item{
+        margin-bottom: 40px;
+        .history-title{
+          margin-bottom: 15px;
+          max-width: 95%;
+          padding-left: 5%;
+          .history__year{
+            padding: 0 0 5px 10px;
+            font-size: 18px;
+          }
+          .history__title{
+            padding: 10px 0 0 10px;
+            font-weight: 300;
+            font-size: 16px;
+          }
+        }
+        .history__card{
+          max-width: 100%;
+          padding: 20px 10px 50px;
+          display: block;
+          .history__img{
+            width: 100%;
+            height: 180px;
+            margin-right: 0;
+          }
+          .history-block{
+            margin-top: 20px;
+            .history__text{
+              padding: 25px 10px 10px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .history-container{
+        .history{
+          padding: 10px 0 0;
+        }
+      }
+    }
+  }
+
+}
+@media(max-width:1439px){
+  .about-page{
+    .content{
+      .award__card{
+        padding: 15px 10px 30px;
+        width: 300px;
+        .award__img{
+          width: 280px;
+          height: 190px;
+        }
+        .award__title{
+          font-size: 18px;
+          padding: 20px 10px;
+        }
+        .award-block{
+          margin: 0 10px;
+          .winners-block,.players-block{
+            .winners__item{
+              margin-bottom: 3px;
+            }
+            .winner__name,.players__text{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      
+    }
+  }
+}

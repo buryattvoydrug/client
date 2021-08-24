@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../fonts/NeueMachina-Light.eot');
+  src: local('Neue Machina Light'), local('NeueMachina-Light'),
+      url('../fonts/NeueMachina-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NeueMachina-Light.woff2') format('woff2'),
+      url('../fonts/NeueMachina-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../fonts/NeueMachina-Regular.eot');
+  src: local('Neue Machina Regular'), local('NeueMachina-Regular'),
+      url('../fonts/NeueMachina-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NeueMachina-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../fonts/NeueMachina-Ultrabold.eot');
+  src: local('Neue Machina Ultrabold'), local('NeueMachina-Ultrabold'),
+      url('../fonts/NeueMachina-Ultrabold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NeueMachina-Ultrabold.woff2') format('woff2'),
+      url('../fonts/NeueMachina-Ultrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+*{
+  font-family: 'Neue Machina';
+}

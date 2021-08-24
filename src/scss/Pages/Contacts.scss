@@ -1,0 +1,161 @@
+.contacts-page{
+  .content{
+    width: 100%;
+  }
+  .contacts{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    width: 100%;
+    display: flex;
+    .map-block{
+      margin: 30px 60px 0 20px;
+      width: 100%;
+      .map{
+        height: 55vh;
+        background: url('/images/map.png');
+        background-size: cover;
+        border-radius: 40px !important;
+        z-index:0;
+        // overflow: 'hidden';
+      }
+      .map > div{
+        overflow: hidden;
+        border-radius: 40px !important;
+        z-index:0;
+      }
+      .adress{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color:#fff;
+        font-weight: 800;
+        font-size: 28px;
+        padding:20px 0 55px;
+        line-height: 100%;
+        text-align: right;
+        .metro{
+          font-size: 18px;
+          font-weight: 300;
+          .metro__img{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .contacts-block{
+      color:#fff;
+      min-height: 100%;
+      padding: 65px 60px 45px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .persons-contacts{
+        .person__item{
+          padding-bottom: 50px;
+        }
+      }
+      
+    }
+  }
+}
+.working{
+  width: 320px;
+  .time{
+    font-weight: 800;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  hr{
+    margin: 5px 0 10px;
+  }
+  .balls{
+    display: flex;
+    padding: 0 10px;
+    .ball{
+      margin-right: 5px;
+      width: 40px;
+      height: 40px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .disabled__ball{
+      opacity: 0.2;
+    }
+  }
+}
+@media(max-width:1439px) and (min-width:1280px){
+  .contacts-page{
+    .content{
+      .map-block{
+        .adress{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:1279px)and(min-width:1024px){
+  .contacts-page{
+    .content{
+      .map-block{
+        margin-right: 30px;
+      }
+      .contacts-block{
+        padding-right: 30px;
+      }
+    }
+  }
+}
+@media(max-width:1023px){
+  .contacts-page{
+    .content{
+      // margin-top: 80px;
+      .contacts{
+        flex-direction: column-reverse;
+        border-radius: 30px;
+        .contacts-block{
+          padding: 40px 40px 0 25px;
+          .persons-contacts{
+            .person__item{
+              padding-bottom: 25px;
+            }
+          }
+          .working{
+            margin-top: 20px;
+            width: auto;
+            .time{
+              font-size: 14px;
+            }
+            .balls{
+              .ball{
+                margin-right: 3px;
+                width: 30px;
+                height: 30px;
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        .map-block{
+          margin: 40px 20px 0 20px;
+          width: auto;
+          .adress{
+            font-size: 18px;
+            padding:20px 0 35px;
+            .metro{
+              font-size: 14px;
+              .metro__img{
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
